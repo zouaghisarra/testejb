@@ -1,0 +1,36 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:p="http://primefaces.org/ui">
+ 
+     <h:head>
+ 
+     </h:head>
+ 
+     <h:body>
+     <h:form id="s">
+     <p:dataTable var="ar" value="#{mBArticle.articles}" id="dataTable">
+     <p:column headerText="code">
+       <h:outputText value="#{ar.code}"></h:outputText>
+     </p:column>
+     
+     <p:column headerText="designation">
+       <h:outputText value="#{ar.designation}"></h:outputText>
+     </p:column>
+     
+     <p:column headerText="prixHT">
+       <h:outputText value="#{ar.prixHT}"></h:outputText>
+     </p:column>
+     
+     <p:column headerText="tva">
+       <h:outputText value="#{ar.tva}"></h:outputText>
+     </p:column>
+     
+     </p:dataTable>
+     
+     
+    		   
+     
+     
+	 </h:form>
+     </h:body></html>
